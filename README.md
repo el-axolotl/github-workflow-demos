@@ -1,5 +1,20 @@
 # github-workflow-demos
 A collection of github actions to implement into code pipelines.
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠸⣿⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⣀⣠⡈⠻⣿⣷⡄⢲⣶⣦⣤⣤⣤⣀⡀⠀⠸⢿⡿⠁⠀⠀⢀⣀⠄⠀
+⠀⠀⣈⣉⣉⣉⣛⠂⠈⠻⣿⠈⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣄⠀⢿⣿⠟⠋⠀⠀
+⠀⢠⣌⠻⢿⣿⣿⣿⣦⡀⠉⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⣤⣤⠆⠀
+⠀⢸⣿⣷⣦⣤⡌⠉⠙⠻⠆⢸⣿⣿⣿⠟⠻⣿⣿⣿⣿⣿⡿⠋⢙⣇⠘⠋⠀⠀
+⠀⠸⠿⠛⢉⣠⣤⣶⣶⣦⠄⠈⢿⣿⣿⣦⣤⣼⣿⣿⣿⣿⣿⣶⣿⡟⠀⠀⠀⠀
+⠀⠀⠀⠙⠛⠛⣉⣉⣉⡁⠀⠀⠀⠙⠻⠿⣿⣿⣿⣿⣿⣿⣿⠿⠋⠀⠀⠀⠀⠀
+⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⡿⠖⠀⠀⠀⠀⠀⠀⠈⠉⠉⢀⣀⣤⣴⡀⠀⠀⠀⠀
+⠀⠀⢰⣿⣿⣿⣿⣿⡿⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠺⣿⣿⣿⣿⣷⠀⠀⠀⠀
+⠀⠀⣼⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠼⠿⢿⣿⣿⣷⣄⠀⠀
+⠀⠈⠉⠹⣿⠿⠋⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠀⠀⠀
+⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
 ## Trufflehog
 ### What is it?
@@ -8,3 +23,10 @@ According to GitGuardian, 10 million new secrets were detected in public reposit
 TruffleHog is a tool that can be implemented as a pre-commit hook or a GitHub action that can scan all of your repository's previous commits, for secrets. For implementation, see [./.github/workflows/trufflehog.yml](https://github.com/el-axolotl/github-workflow-demos/blob/main/.github/workflows/trufflehog.yml)
 
 For more information, see https://github.com/trufflesecurity/trufflehog
+
+## Dependabot
+### What is it?
+Dependabot is a tool by GitHub that assists with updating dependencies.
+
+### Caveats
+- Make sure you nest the dependabot.yml file directly under the /.github directory
